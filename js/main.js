@@ -27,6 +27,11 @@ document.addEventListener("keydown", function (e) {
     showPrev();
   }
 });
+document.addEventListener("click", function (e) {
+  if (e.target == lightBoxContainer) {
+    hideLightBox();
+  }
+});
 //--------------------- Functions --------------------
 function showLightBox(index) {
   var picSrc = imgs[index].getAttribute("src");
